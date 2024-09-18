@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>practica de login</title>
+	<link rel="stylesheet" href="regis.css">
+</head>
+<body>
+
+	<section class="content">
+		<header>Registro</header>
+		<form method="post" action="regis.php">
+
+			<div class="input-box">
+				<label>nombre completo</label>
+				<input type="text" name="usuario" placeholder="ingresar tu nombre completo" required>
+			</div>
+
+			<div class="input-box">
+				<label>gmail</label>
+				<input type="text" name="gmail" placeholder="ingresar tu Gmail" required>
+			</div>
+
+			<div class="column">
+				<div class="input-box">
+					<label>contraseña</label>
+					<input type="password" name="contraseña" placeholder="ingresar tu contraseña" required>
+				</div>
+				<div class="input-box">
+					<label>edad</label>
+					<input type="number" min="1" max="100" step="1" oninput="this.value = this.value.replace(/[^0-9]/g, '')" name="edad" placeholder="ingresar tu edad" required><!-- min es el minimo de edad, max es el maximo, oninput es para que solo se pueda poner numeros y step es para numeros enteros-->
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="input-box">
+					<label>telefono</label>
+					<input type="number" name="telefono" placeholder="ingresar tu numero telefonico" required>
+				</div>
+				<div class="input-box">
+					<label>fecha de nacimiento</label>
+					<input type="date" name="fnacimiento" placeholder="ingresar tu fecha de nacimiento" required>
+				</div>
+			</div>
+
+			<div class="genero-box">
+				<h3>genero</h3>
+				<div class="genero-option">
+					<div class="genero">
+						<input type="radio" id="check-male" name="genero" checked>
+						<label for="check-male">hombre</label>
+					</div>
+					<div class="genero">
+						<input type="radio" id="check-female" name="genero">
+						<label for="check-female">mujer</label>
+					</div>
+					<div class="genero">
+						<input type="radio" id="check-other" name="genero">
+						<label for="check-other">otro</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="input-box">
+				<label>direccion</label>
+				<input type="text" name="direccion" placeholder="ingresar tu direccion" required>
+			</div>
+
+			<div class="column">
+				<div class="select-box">
+					<select name="pais">
+						<option hidden>pais</option>
+						<option>Argentina</option>
+						<option>Estados Unidos</option>
+						<option>China</option>
+						<option>Rusia</option>
+						<option>India</option>
+						<option>Brasil</option>
+						<option>Reino Unido</option>
+						<option>Alemania</option>
+						<option>Francia</option>
+						<option>Japón</option>
+						<option>Canadá</option>
+						<option>Australia</option>
+						<option>México</option>
+						<option>España</option>
+						<option>Italia</option>
+						<option>Uruguay</option>
+					</select>
+				</div>
+				<input type="text" name="cuidad" placeholder="ciudad" required>
+			</div>
+
+			<div class="column">
+				<input type="text" name="region" placeholder="region" required>
+				<input type="number" name="cdpostal" placeholder="codigo postal" required>
+			</div>
+
+			<button type="submit" id="btn">Registrarse</button>
+			
+			<div class="regis">
+				<p>Ya tienes una cuenta <a href="login.html">Iniciar sesión</a></p>
+			</div>
+
+		</form>
+	</section>
+
+<script src="regis.js"></script>
+</body>
+</html>

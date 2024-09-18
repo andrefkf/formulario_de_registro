@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal del formulario */
+.content {
+    position: relative;
+    width: 700px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 2rem 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo del encabezado */
+header {
+    text-align: center;
+    font-family: "Graduate", serif;
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo para las cajas de entrada */
+.input-box {
+    margin-bottom: 1.5rem;
+}
+
+.input-box label {
+    font-family: "Graduate", serif;
+    font-size: 1.20rem;
+    color: #000;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.input-box input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 1rem;
+    color: #000;
+    font-family: "Graduate", serif;
+    outline: none;
+}
+
+.input-box input::placeholder {
+    color: #888;
+    font-family: "Graduate", serif;
+}
+
+.input-box input[type="text"]:focus,
+.input-box input[type="password"]:focus {
+    border-color: #278853;
+}
+
+
+/* Estilo para el enlace de iniciar sesión */
+.regis {
+    text-align: center;
+    margin-top: 1.20rem;
+    font-family: "Graduate", serif;
+}
+
+.regis p {
+    font-size: 1.20rem;
+    color: #000;
+}
+
+.regis p a {
+    color: #278853;
+    text-decoration: none;
+}
+
+.regis p a:hover {
+    text-decoration: underline;
+}
+
+#btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #278853;
+    border: none;
+    color: #fff;
+    font-family: "Graduate", serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#btn:hover {
+    background-color: #1d663f;
+}

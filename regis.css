@@ -1,0 +1,211 @@
+/* Ajustes generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal del formulario */
+.content {
+    position: relative;
+    width: 700px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 2rem 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo del encabezado */
+header {
+    text-align: center;
+    font-family: "Graduate", serif;
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo para las cajas de entrada */
+.input-box {
+    margin-bottom: 1.5rem;
+}
+
+.input-box label {
+    font-family: "Graduate", serif;
+    font-size: 1.20rem;
+    color: #000;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.input-box input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 1rem;
+    color: #000;
+    font-family: "Graduate", serif;
+    outline: none;
+}
+
+.input-box input::placeholder {
+    color: #888;
+    font-family: "Graduate", serif;
+}
+
+/* Estilo para las columnas */
+.column {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.column .input-box {
+    flex: 1;
+    margin-bottom: 1.5rem;
+}
+
+.column input[type="text"],
+.column input[type="number"],
+.column input[type="password"],
+.column input[type="date"] {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 1rem;
+    color: #000;
+    font-family: "Graduate", serif;
+    outline: none;
+}
+
+.column input[type="text"]::placeholder,
+.column input[type="number"]::placeholder,
+.column input[type="password"]::placeholder,
+.column input[type="date"]::placeholder {
+    color: #888;
+    font-family: "Graduate", serif;
+}
+
+/* Ajustes adicionales para el borde y enfoque */
+.column input[type="text"]:focus,
+.column input[type="number"]:focus,
+.column input[type="password"]:focus,
+.column input[type="date"]:focus {
+    border-color: #278853;
+}
+
+/* Estilo para el campo de selección */
+.select-box select {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 1rem;
+    color: #000;
+    font-family: "Graduate", serif;
+    outline: none;
+    appearance: none; /* Elimina la flecha por defecto en algunos navegadores */
+}
+
+/* Estilo para la sección de género */
+.genero-box {
+    margin-bottom: 1.5rem;
+}
+
+.genero-box h3 {
+    font-family: "Graduate", serif;
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.genero-option {
+    display: flex;
+    gap: 20px;
+}
+
+.genero {
+    display: flex;
+    align-items: center;
+}
+
+.genero input[type="radio"] {
+    margin-right: 5px;
+}
+
+.genero label {
+    font-family: "Graduate", serif;
+    font-size: 1rem;
+    color: #000;
+}
+
+/* Estilo para el enlace de iniciar sesión */
+.regis {
+    text-align: center;
+    margin-top: 1.20rem;
+    font-family: "Graduate", serif;
+}
+
+.regis p {
+    font-size: 1.20rem;
+    color: #000;
+}
+
+.regis p a {
+    color: #278853;
+    text-decoration: none;
+}
+
+.regis p a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo adicional para el input de número */
+input[type="number"] {
+    -moz-appearance: textfield; /* Elimina las flechas en Firefox */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Elimina las flechas en Chrome, Safari y Edge */
+}
+
+input:focus {
+    border-color: #278853;
+}
+
+#btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #278853;
+    border: none;
+    color: #fff;
+    font-family: "Graduate", serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#btn:hover {
+    background-color: #1d663f;
+}
